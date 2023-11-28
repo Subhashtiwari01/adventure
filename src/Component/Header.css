@@ -1,0 +1,110 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.868);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;
+    max-width: cover;
+    margin: 0 auto;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  .logo-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+    margin-right: 10px; /* Adjust margin based on your design */
+    display: inline-block;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 350px;
+    height: 40px;
+  }
+  
+  .menu-icon,
+  .search-icon,
+  .location-icon,
+  .signin-icon {
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .menu-icon {
+    margin-right: 10px;
+  }
+  
+  .search-icon {
+    margin-right: 20px;
+  }
+  
+  .search-bar input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links button {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    .search-bar,
+    .nav-links button {
+      display: none;
+    }
+  
+    .menu-button {
+      margin-right: 10px;
+    }
+  
+    .logo-button {
+      margin-right: 0;
+      display: none;
+    }
+  
+    .header.zoomed-out .logo-button {
+      display: inline-block;
+    }
+  }
+  
+  /* Additional Styles for Zoomed Out State */
+  @media only screen and (max-width: 600px) and (max-width: 70%) {
+
+  
+    .header.zoomed-out .menu-button {
+      display: inline-block;
+    }
+  }
+  

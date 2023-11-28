@@ -1,0 +1,148 @@
+.work-list-items {
+  list-style: none;
+  width: 20rem;
+}
+
+.adv-work-item {
+  text-decoration: none;
+  color: inherit; 
+  border-radius: 3%;
+transition: filter 1s, transform 1s;
+}
+
+
+.adv-work-item:hover {
+  filter: brightness(50%);
+  transform: scale(1.05);
+  border-radius: 0;
+  transition: filter 0.5s, transform 0.5s;
+}
+
+
+
+.adv-card-container {
+  position: relative;
+  height: 23rem;
+  width: 18rem;
+  overflow: hidden;
+  border-radius: 3%; 
+  transition: box-shadow 0.5s, border-radius 0.5s;
+}
+
+
+.adv-card-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  /* transition: box-shadow 0.5s; */
+}
+
+
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.5s, bottom 0.5s;
+}
+
+
+.adv-work-item:hover h1 {
+  transform: translateY(-1rem) scale(1.1);
+  left: 1.5rem;
+  transition: transform 0.5s, left 0.5s; /* Added smoother transition */
+}
+
+.adv-work-item:hover .logo-container img {
+  transform: translateY(-1rem) scale(1.1);
+  position: relative;
+  left: 1.5rem;
+  bottom: 6rem;
+  transition: transform 0.5s, left 0.5s, bottom 0.8s; /* Added smoother transition */
+}
+
+.adv-logo-container h1 {
+  position: absolute;
+  margin: 0;
+  left: 27%;
+  bottom: 60%;
+  font-size: 1.8rem; 
+  color: white;
+  overflow: hidden;
+  transition: transform 0.5s, left 0.5s;
+}
+
+.adv-logo-container h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #3498db;
+  transition: width 0.8s ease-in-out;
+}
+
+.adv-work-item:hover .logo-container h1::before {
+  width: 100%;
+}
+.bg-image img {
+  position: relative;
+  bottom: 2rem;
+  height: 4rem;
+  display: block;
+}
+
+
+
+.adv-work-container {
+position: relative;
+padding: 0;
+}
+
+.adv-card-slider-container {
+position: relative;
+}
+
+.adv-card-slider {
+overflow: hidden;
+}
+
+.adv-card-list {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.adv-work-list-items {
+flex: 0 0 25%;
+}
+
+.adv-nav-button {
+background: none;
+border: none;
+font-size: 24px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+}
+
+.prev {
+left: 10px;
+}
+
+.next {
+right: 10px;
+}
+
+.nav-button:disabled {
+opacity: 0.5;
+cursor:pointer;
+}

@@ -1,0 +1,260 @@
+.product-card {
+    max-width: 300px;
+    margin: 0 5px;
+    transition: box-shadow 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+}
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1); 
+    transition: transform 0.2s ease-in-out;
+  }
+
+.card-strip {
+    display: flex;
+    justify-content: center;
+}
+.arrowposition {
+    display: flex;
+    font-size: 3em;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 50%;
+}
+.arrow-button{
+  border-radius: 50%;
+width: 3rem;
+height: auto;
+align-items: center;
+justify-content: center ;
+margin: 10px;
+padding: 20px;
+
+}
+  .arrow-button:hover {
+    background-color: #e8e7e7; 
+    color: #120c0c; 
+  }
+/* custom-button-mindy1 */
+  .custom-button-mindy1 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color:#86BFC8; 
+    color: #ffffff; 
+    border: 2px solid #86BFC8; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy1:hover {
+    color: #ffffff; 
+  }
+
+
+
+  .custom-button-mindy2 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px; 
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #96D06A; 
+    color: #ffffff; 
+    border: 2px solid #7adb34; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy2:hover {
+    color: #ffffff; 
+  }
+  .custom-button-mindy3 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px; 
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #36A1F2; 
+    color: #ffffff; 
+    border: 2px solid #36A1F2; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy3:hover {
+    background-color: #2980b9; 
+    color: #ffffff; 
+  }
+
+
+  .custom-button-mindy2_1 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+    justify-content: center;
+    display: flex;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #DCB4BC; 
+    color: #ffffff; 
+    border: 2px solid #DCB4BC; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy2_1:hover {
+    color: #ffffff; 
+  }
+  .custom-button-mindy3_1 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #147FC8; 
+    color: #ffffff; 
+    border: 2px solid #147FC8; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy3_1:hover {
+    color: #ffffff; 
+  }
+
+
+  .custom-button-mindy3_2 {
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px; 
+    margin: 10PX; 
+
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #7CF14C; 
+    color: #ffffff; 
+    border: 2px solid #7CF14C; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy3_2:hover {
+    color: #ffffff; 
+  }
+  .custom-button-mindy3_3 {
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 10PX; 
+    border-radius: 400%; 
+    
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #f5001a; 
+    color: #ffffff; 
+    border: 2px solid #f5001a; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy3_3:hover {
+    color: #ffffff; 
+  }
+  .custom-button-mindy4_1 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(0, 106, 245); 
+    color: #ffffff; 
+    border: 2px solid #3498db; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy4_1:hover {
+    color: #ffffff; 
+  }
+  .custom-button-mindy4_2 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #fd9de5; 
+    color: #ffffff; 
+    border: 2px solid #fd9de5; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .custom-button-mindy4_2:hover {
+    color: #ffffff; 
+  }
+
+
+
+
+  
+/* h2css */
+.productmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
