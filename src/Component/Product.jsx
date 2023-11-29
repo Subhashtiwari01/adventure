@@ -100,77 +100,83 @@ export default function Product() {
   const canShowPrev = currentIndex > 0;
 
   return (
-    <div className='Main'>
-      <div className='productmain'>
-        <h1 className='productgear'>Get the gear</h1>
+    <div className='prod-Main'>
+      <div className='prod-productmain'>
+        <h1 className='prod-productgear'>Get the gear</h1>
       </div>
-      <div className="card-container">
-        <div className="card-strip">
+      <div className="prod-card-container">
+        <div className="prod-card-strip">
           {productDataState.slice(currentIndex, currentIndex + 3).map((product, index) => (
             <div
               key={index}
-              className={`product-card ${currentIndex === index ? 'active' : ''} ${currentIndex + 1 === index ? 'next' : ''}`}
+              className={`prod-product-card ${currentIndex === index ? 'active' : ''} ${currentIndex + 1 === index ? 'next' : ''}`}
             >
-              <div className="image-container">
+              <div className="prod-image-container">
                 <img
                   src={product.imageUrl}
                   alt={product.name}
-                  className="product-image"
+                  className="prod-product-image"
                 />
                 {product.img === 1 && (
-                  <div className='custom-button-mindy'>
-                    <button className="custom-button-mindy1" onClick={() => handleButtonClick1(index)}>
+                  <div className='prod-pro-btn1-center'>
+                    <button className="prod-custom-button-mindy1" onClick={() => handleButtonClick1(index)}>
                     </button>
-                    <button className="custom-button-mindy2 " onClick={() => handleButtonClick2(index)}>
+                    <button className="prod-custom-button-mindy2 " onClick={() => handleButtonClick2(index)}>
                     </button>
-                    <button className="custom-button-mindy3" onClick={() =>handleButtonClick3(index)}>
+                    <button className="prod-custom-button-mindy3" onClick={() =>handleButtonClick3(index)}>
                     </button>
                   </div>
                 )}
                 {product.img === 2 && (
                   <>
-                    <button className="custom-button-mindy2_1" onClick={() => handleButtonClick2_1(index)}>
+                  <div className='prod-pro-btn-center'>
+                    <button className="prod-custom-button-mindy2_1" onClick={() => handleButtonClick2_1(index)}>
                     </button>
+                    </div>
                    
                   </>
                 )}
                 {product.img === 3 && (
                   <>
-                    <button className="custom-button-mindy3_1" onClick={() => handleButtonClick3_1(index)}>
+                  <div className='prod-pro-btn3-center'>
+                    <button className="prod-custom-button-mindy3_1" onClick={() => handleButtonClick3_1(index)}>
                     </button>
-                    <button className="custom-button-mindy3_2" onClick={() => handleButtonClick3_2(index)}>
+                    <button className="prod-custom-button-mindy3_2" onClick={() => handleButtonClick3_2(index)}>
                     </button>
-                    <button className="custom-button-mindy3_3" onClick={() => handleButtonClick3_3(index)}>
+                    <button className="prod-custom-button-mindy3_3" onClick={() => handleButtonClick3_3(index)}>
                     </button>
+                    </div>
                   </>
                 )}
                 {product.img === 4 && (
                   <>
-                    <button className="custom-button-mindy4_1" onClick={() => handleButtonClick4_1(index)}>
+                  <div className='prod-pro-btn4-center'>
+                    <button className="prod-custom-button-mindy4_1" onClick={() => handleButtonClick4_1(index)}>
                     </button>
-                    <button className="custom-button-mindy4_2" onClick={() => handleButtonClick4_2(index)}>
+                    <button className="prod-custom-button-mindy4_2" onClick={() => handleButtonClick4_2(index)}>
                     </button>
+                    </div>
                   </>
                 )}
               </div>
-              <div className="product-info">
-                <div className="product-name">{product.name}</div>
-                <div className="product-price">{product.price}</div>
-                <span className="stars">
+              <div className="prod-product-info">
+                <div className="prod-product-name">{product.name}</div>
+                <div className="prod-product-price">{product.price}</div>
+                <span className="prod-stars">
                   {[...Array(product.stars)].map((_, i) => (
                     <FontAwesomeIcon key={i} icon={faStar} />
                   ))}
                 </span>
-                (<span className="value">{product.stars}</span>)
+                (<span className="prod-value">{product.stars}</span>)
               </div>
             </div>
           ))}
         </div>
-        <div className='arrowposition'>
-          <div className={`arrow-button ${canShowPrev ? '' : 'disabled'}`} onClick={canShowPrev ? handlePrevClick : null}>
+        <div className='prod-arrowposition'>
+          <div className={`prod-arrow-button ${canShowPrev ? '' : 'disabled'}`} onClick={canShowPrev ? handlePrevClick : null}>
             <FontAwesomeIcon icon={faAngleLeft} />
           </div>
-          <div className={`arrow-button ${canShowNext ? '' : 'disabled'}`} onClick={canShowNext ? handleNextClick : null}>
+          <div className={`prod-arrow-button ${canShowNext ? '' : 'disabled'}`} onClick={canShowNext ? handleNextClick : null}>
             <FontAwesomeIcon icon={faAngleRight} />
           </div>
         </div>

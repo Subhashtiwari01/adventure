@@ -205,100 +205,106 @@ export default function Product() {
               key={index}
               className={`surf-product-card ${currentIndex === index ? 'active' : ''} ${currentIndex + 1 === index ? 'next' : ''}`}
             >
-              <div className="image-container">
+              <div className="surf-image-container">
                 <img
                   src={product.imageUrl}
                   alt={product.name}
                   className="surf-product-image"
                 />
+                <div className='surf-center'>
                 {product.img === 1 && (
                   <div className='surf-custom-button-mindy'>
-                    <button className="custom-button-mindy1" onClick={() => handleButtonClick1(index)}>
+                    <button className="surf-custom-button-mindy1" onClick={() => handleButtonClick1(index)}>
                     </button>
-                    <button className="custom-button-mindy2 " onClick={() => handleButtonClick2(index)}>
+                    <button className="surf-custom-button-mindy2 " onClick={() => handleButtonClick2(index)}>
                     </button>
-                    <button className="custom-button-mindy3" onClick={() =>handleButtonClick3(index)}>
+                    <button className="surf-custom-button-mindy3" onClick={() =>handleButtonClick3(index)}>
                     </button>
                   </div>
                 )}
                 {product.img === 2 && (
                   <>
-                    <button className="custom-button-mindy2_1" onClick={() => handleButtonClick2_1(index)}>
+                    <button className="surf-custom-button-mindy2_1" onClick={() => handleButtonClick2_1(index)}>
                     </button>
-                    <button className="custom-button-mindy2_2" onClick={() => handleButtonClick2_2(index)}>
+                    <button className="surf-custom-button-mindy2_2" onClick={() => handleButtonClick2_2(index)}>
                     </button>
                    
                   </>
                 )}
                 {product.img === 3 && (
                   <>
-                    <button className="custom-button-mindy3_1" onClick={() => handleButtonClick3_1(index)}>
+                    <button className="surf-custom-button-mindy3_1" onClick={() => handleButtonClick3_1(index)}>
                     </button>
                   </>
                 )}
                 {product.img === 4 && (
                   <>
-                    <button className="custom-button-mindy4_1" onClick={() => handleButtonClick4_1(index)}>
+                    <button className="surf-custom-button-mindy4_1" onClick={() => handleButtonClick4_1(index)}>
                     </button>
-                    <button className="custom-button-mindy4_2" onClick={() => handleButtonClick4_2(index)}>
+                    <button className="surf-custom-button-mindy4_2" onClick={() => handleButtonClick4_2(index)}>
                     </button>
-                    <button className="custom-button-mindy4_3" onClick={() => handleButtonClick4_3(index)}>
+                    <button className="surf-custom-button-mindy4_3" onClick={() => handleButtonClick4_3(index)}>
                     </button>
                   </>
                 )}
                 {
                     product.img===5 &&(
                         <>
-                        <button className='custom-button-mindy5_1' onClick={()=>handleButtonClick5_1(index)}></button>
-                        <button className='custom-button-mindy5_2' onClick={()=>handleButtonClick5_2(index)}></button>
+                        <div className='surf-bt-gap'>
+
+                        <button className='surf-custom-button-mindy5_1' onClick={()=>handleButtonClick5_1(index)}></button>
+                        <button className='surf-custom-button-mindy5_2' onClick={()=>handleButtonClick5_2(index)}></button>
+                        </div>
                         </>
                     )
                 }
                                 {
                     product.img===6 &&(
                         <>
-                        <button className='custom-button-mindy6_1' onClick={()=>handleButtonClick6_1(index)}></button>
-                        <button className='custom-button-mindy6_2' onClick={()=>handleButtonClick6_2(index)}></button>
+                        <button className='surf-custom-button-mindy6_1' onClick={()=>handleButtonClick6_1(index)}></button>
+                        <button className='surf-custom-button-mindy6_2' onClick={()=>handleButtonClick6_2(index)}></button>
                         </>
                     )
                 }
                 {product.img === 7 && (
                   <>
-                    <button className="custom-button-mindy7_1" onClick={() => handleButtonClick7_1(index)}>
+                    <button className="surf-custom-button-mindy7_1" onClick={() => handleButtonClick7_1(index)}>
                     </button>
                   </>
                 )}
                 {product.img === 8 && (
                   <>
-                    <button className="custom-button-mindy8_1" onClick={() => handleButtonClick8_1(index)}>
+                    <button className="surf-custom-button-mindy8_1" onClick={() => handleButtonClick8_1(index)}>
                     </button>
                   </>
                 )}
                 {product.img === 9 && (
                   <>
-                    <button className="custom-button-mindy9_1" onClick={() => handleButtonClick9_1(index)}>
+                    <button className="surf-custom-button-mindy9_1" onClick={() => handleButtonClick9_1(index)}>
                     </button>
-                    <button className="custom-button-mindy9_2" onClick={() => handleButtonClick9_2(index)}>
+                    <button className="surf-custom-button-mindy9_2" onClick={() => handleButtonClick9_2(index)}>
                     </button>
+                    
                     
                   </>
                 )}
+                </div>
               </div>
               <div className="surf-product-info">
-                <div className="product-name">{product.name}</div>
-                <div className="product-price">{product.price}</div>
-                <span className="stars">
+                <div className="surf-product-name">{product.name}</div>
+                <div className="surf-product-price">{product.price}</div>
+                <span className="surf-stars">
                   {[...Array(product.stars)].map((_, i) => (
                     <FontAwesomeIcon key={i} icon={faStar} />
                   ))}
                 </span>
-                (<span className="value">{product.stars}</span>)
+                (<span className="surf-value">{product.stars}</span>)
               </div>
             </div>
           ))}
         </div>
         <div className='surf-arrowposition'>
-          <div className={`arrow-button ${canShowPrev ? '' : 'disabled'}`} onClick={canShowPrev ? handlePrevClick : null}>
+          <div className={`surf-arrow-button ${canShowPrev ? '' : 'disabled'}`} onClick={canShowPrev ? handlePrevClick : null}>
             <FontAwesomeIcon icon={faAngleLeft} />
           </div>
           <div className={`surf-arrow-button ${canShowNext ? '' : 'disabled'}`} onClick={canShowNext ? handleNextClick : null}>
@@ -309,7 +315,7 @@ export default function Product() {
       <div className='surf-Content-img '>
         <h2>EcoWorks Surf</h2>
         <p>Our EcoWorks line uses 100% renewable or recycled materials. We want you to feel adventure-ready and confident that your purchase will make a lasting impact.</p>
-     <button className='shop-ecoworks' onClick={()=>handleclickshop} >SHOP ECOWORKS</button>
+     <button className='surf-shop-ecoworks' onClick={()=>handleclickshop} >SHOP ECOWORKS</button>
       </div>
     </div>
   );

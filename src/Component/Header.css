@@ -1,4 +1,4 @@
-.header {
+.hed-header {
     background-color: rgba(0, 0, 0, 0.868);
     color: white;
     display: flex;
@@ -10,7 +10,7 @@
     margin: 0 auto;
   }
   
-  .menu-button {
+  .hed-menu-button {
     background: none;
     border: none;
     padding: 0;
@@ -18,7 +18,7 @@
     cursor: pointer;
   }
   
-  .logo-button {
+  .hed-logo-button {
     background: none;
     border: none;
     padding: 0;
@@ -30,7 +30,7 @@
     display: inline-block;
   }
   
-  .search-bar {
+  .hed-search-bar {
     display: flex;
     align-items: center;
     margin: 0 20px;
@@ -40,23 +40,23 @@
     height: 40px;
   }
   
-  .menu-icon,
-  .search-icon,
+  .hed-menu-icon,
+  .hed-search-icon,
   .location-icon,
-  .signin-icon {
+  .hed-signin-icon {
     color: white;
     margin-right: 10px;
   }
   
-  .menu-icon {
+  .hed-menu-icon {
     margin-right: 10px;
   }
   
-  .search-icon {
+  .hed-search-icon {
     margin-right: 20px;
   }
   
-  .search-bar input {
+  .hed-search-bar input {
     width: 200px;
     padding: 8px;
     border: none;
@@ -66,12 +66,12 @@
     color: white;
   }
   
-  .nav-links {
+  .hed-nav-links {
     display: flex;
     align-items: center;
   }
   
-  .nav-links button {
+  .hed-nav-links button {
     color: white;
     background: none;
     border: none;
@@ -81,20 +81,20 @@
   }
   @media only screen and (max-width: 600px) {
     .search-bar,
-    .nav-links button {
+    .hed-nav-links button {
       display: none;
     }
   
-    .menu-button {
+    .hed-menu-button {
       margin-right: 10px;
     }
   
-    .logo-button {
+    .hed-logo-button {
       margin-right: 0;
       display: none;
     }
   
-    .header.zoomed-out .logo-button {
+    .hed-header.zoomed-out .logo-button {
       display: inline-block;
     }
   }
@@ -103,7 +103,7 @@
   @media only screen and (max-width: 600px) and (max-width: 70%) {
 
   
-    .header.zoomed-out .menu-button {
+    .hed-header.zoomed-out .menu-button {
       display: inline-block;
     }
   }

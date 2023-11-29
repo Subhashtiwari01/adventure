@@ -1,32 +1,32 @@
-.surf-product-card{
+.trend-product-card {
     max-width: 300px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
     transition: box-shadow 0.4s ease-in-out;
     display: flex;
     flex-direction: column;
-    opacity: 1;
+    /* opacity: 1; */
     position: relative;
     align-items: center;
     cursor: pointer;
 }
-.surf-product-card:hover {
+.trend-product-card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    transform: scale(1); 
-    transition: transform 0.2s ease-in-out;
+    /* transform: scale(1);  */
+    /* transition: transform 0.2s ease-in-out; */
   }
 
-.surf-card-strip {
+.trend-card-strip {
     display: flex;
     justify-content: center;
 }
-.surf-arrowposition {
+.trend-arrowposition {
     display: flex;
     font-size: 3em;
     cursor: pointer;
     justify-content: center;
     border-radius: 50%;
 }
-.surf-arrow-button{
+.trend-arrow-button{
   border-radius: 50%;
 width: 3rem;
 height: auto;
@@ -36,12 +36,12 @@ margin: 10px;
 padding: 20px;
 
 }
-  .surf-arrow-button:hover {
+  .trend-arrow-button:hover {
     background-color: #e8e7e7; 
     color: #120c0c; 
   }
-/* surf-custom-button-mindy1 */
-  .surf-custom-button-mindy1 {
+/* trend-custom-button-mindy1 */
+  .trend-custom-button-mindy1 {
     margin: 10PX; 
 
     height: 30px;
@@ -53,19 +53,20 @@ padding: 20px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color:#86BFC8; 
+    background-color:#93969a; 
     color: #ffffff; 
-    border: 2px solid #86BFC8; 
+    border: 2px solid #93969a; 
+    transition: background-color 0.3s, color 0.3s; 
   
   }
   
-  .surf-custom-button-mindy1:hover {
+  .trend-custom-button-mindy1:hover {
     color: #ffffff; 
   }
 
 
 
-  .surf-custom-button-mindy2 {
+  .trend-custom-button-mindy2 {
     margin: 10PX; 
 
     height: 30px;
@@ -76,15 +77,17 @@ padding: 20px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color: #96D06A; 
+    background-color: #86bfc8; 
     color: #ffffff; 
-    border: 2px solid #7adb34; 
+    border: 2px solid #86bfc8; 
     transition: background-color 0.3s, color 0.3s; 
   
   }
   
-
-  .surf-custom-button-mindy3 {
+  .trend-custom-button-mindy2:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy3 {
     margin: 10PX; 
 
     height: 30px;
@@ -102,337 +105,366 @@ padding: 20px;
   
   }
   
-  .surf-custom-button-mindy3:hover {
+  .trend-custom-button-mindy3:hover {
     background-color: #2980b9; 
     color: #ffffff; 
   }
 
 
-  .surf-custom-button-mindy2_1 {
-    margin: 10PX;
-    align-items: center;
-    display: flex; 
-
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #e6f65a; 
-    color: #ffffff; 
-    border: 2px solid #DCB4BC; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy2_1:hover {
-    color: #ffffff; 
-  }
-
-  .surf-custom-button-mindy2_2 {
-    margin: 10PX;
-    align-items: center;
-    display: flex; 
-
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #76d41b; 
-    color: #ffffff; 
-    border: 2px solid #76d41b; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy2_2:hover {
-    color: #ffffff; 
-  }
-
-
-  .surf-custom-button-mindy3_1 {
-    height: 30px;
-    width: 20px;
+  .trend-custom-button-mindy2_1 {
     margin: 10PX; 
 
+    height: 30px;
+    width: 20px;
     display: inline-block;
     padding: 20px 20px; 
     border-radius: 400%; 
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color: #f4f4f6; 
+    background-color: #86bfc8; 
     color: #ffffff; 
-    border: 2px solid #0d0e0e; 
+    border: 2px solid #86bfc8; 
     transition: background-color 0.3s, color 0.3s; 
   
   }
   
-  .surf-custom-button-mindy3_1:hover {
+  .trend-custom-button-mindy2_1:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy2_2 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px; 
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #96d06a; 
+    color: #ffffff; 
+    border: 2px solid #96d06a; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .trend-custom-button-mindy2_2:hover {
+    color: #ffffff; 
+  }
+
+  .trend-custom-button-mindy2_3 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px; 
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #36A1F2; 
+    color: #ffffff; 
+    border: 2px solid #36A1F2; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy2_3:hover {
+    color: #ffffff; 
+
+  }
+  .trend-custom-button-mindy3_1 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #147FC8; 
+    color: #ffffff; 
+    border: 2px solid #147FC8; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy3_1:hover {
     color: #ffffff; 
   }
 
 
-  
-  .surf-custom-button-mindy4_1 {
+  .trend-custom-button-mindy3_2 {
     height: 30px;
     width: 20px;
     display: inline-block;
     padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: rgb(0, 106, 245); 
-    color: #ffffff; 
-    border: 2px solid #3498db; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy4_1:hover {
-    color: #ffffff; 
-  }
-  .surf-custom-button-mindy4_2 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #5a9ef9; 
-    color: #ffffff; 
-    border: 2px solid #5a9ef9; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy4_2:hover {
-    color: #ffffff; 
-  }
-  .surf-custom-button-mindy4_3 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #984bd8; 
-    color: #ffffff; 
-    border: 2px solid #984bd8; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy4_3:hover {
-    color: #ffffff; 
-  }
-  .surf-custom-button-mindy5_1 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #f1f0eb; 
-    color: #ffffff; 
-    border: 2px solid #f1f0eb; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy5_1:hover {
-    color: #ffffff; 
-  }
-  .surf-custom-button-mindy5_2 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #dcb4bc; 
-    color: #ffffff; 
-    border: 2px solid #dcb4bc; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy5_2:hover {
-    color: #ffffff; 
-  }
-  .surf-custom-button-mindy6_1 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #127cc2; 
-    color: #ffffff; 
-    border: 2px solid #127cc2; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy6_1:hover {
-    color: #ffffff; 
-  }
-  .surf-custom-button-mindy6_2 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #1fbaeb; 
-    color: #ffffff; 
-    border: 2px solid #1fbaeb; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  
-  .surf-custom-button-mindy6_2:hover {
-    color: #ffffff; 
-  }
+    margin: 10PX; 
 
-  .surf-custom-button-mindy7_1 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
     border-radius: 400%; 
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color: #464749; 
+    background-color: #7CF14C; 
     color: #ffffff; 
-    border: 2px solid #464749; 
+    border: 2px solid #7CF14C; 
     transition: background-color 0.3s, color 0.3s; 
   
   }
-  .surf-custom-button-mindy7_1:hover {
+  
+  .trend-custom-button-mindy3_2:hover {
     color: #ffffff; 
   }
-  .surf-custom-button-mindy8_1 {
+  .trend-custom-button-mindy3_3 {
     height: 30px;
     width: 20px;
     display: inline-block;
-    padding: 20px 20px; 
+    padding: 20px 20px;
+    margin: 10PX; 
     border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #464749; 
-    color: #ffffff; 
-    border: 2px solid #464749; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  .surf-custom-button-mindy7_1:hover {
-    color: #ffffff; 
-  }
-  .surf-custom-button-mindy8_1 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #f1f0eb; 
-    color: #ffffff; 
-    border: 2px solid #f1f0eb; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  .surf-custom-button-mindy8_1:hover {
-    color: #ffffff; 
-  }
-  .surf-custom-button-mindy9_1 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding: 20px 20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #b3ead5; 
-    color: #ffffff; 
-    border: 2px solid #b3ead5; 
-    transition: background-color 0.3s, color 0.3s; 
-  
-  }
-  .surf-custom-button-mindy9_1:hover {
-    color: #ffffff; 
-  }
-
-  
-  .surf-custom-button-mindy9_2 {
-    height: 30px;
-    width: 20px;
-    display: inline-block;
-    padding:  20px; 
-    border-radius: 400%; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #36a1f2; 
-    color: #ffffff; 
-    border: 2px solid #36a1f2; 
-    transition: background-color 0.3s, color 0.3s; 
     
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #f5001a; 
+    color: #ffffff; 
+    border: 2px solid #f5001a; 
+    transition: background-color 0.3s, color 0.3s; 
+  
   }
   
-  .surf-custom-button-mindy9_2:hover {
+  .trend-custom-button-mindy3_3:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy3_4 {
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 10PX; 
+    border-radius: 400%; 
+    
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #f5001a; 
+    color: #ffffff; 
+    border: 2px solid #f5001a; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy3_4:hover {
     color: #ffffff; 
   }
 
+  .trend-custom-button-mindy4_1 {
+    margin: 10PX; 
 
-  .surf-Main {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #5f5644; 
+    color: #ffffff; 
+    border: 2px solid #5f5644; 
+    transition: background-color 0.3s, color 0.3s; 
+  
   }
   
-  .Surf-card-container {
-    /* height: 30%; */
-    width: 30%;
-    padding: 10px; /* Adjust padding as needed */
-    margin: 200px; /* Adjust margin as needed */
+  .trend-custom-button-mindy4_1:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy4_2 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #433a35; 
+    color: #ffffff; 
+    border: 2px solid #433a35; 
+    transition: background-color 0.3s, color 0.3s; 
+  
   }
   
-  .surf-Content-img {
-    width: 30%;
-    padding: 1px; /* Add padding or adjust as needed */
-    margin: 200px; /* Adjust margin as needed */
+  .trend-custom-button-mindy4_2:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy5_1 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #a3f1b7; 
+    color: #ffffff; 
+    border: 2px solid #a3f1b7; 
+    transition: background-color 0.3s, color 0.3s; 
+  
   }
   
+  .trend-custom-button-mindy5_1:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy6_1 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #2782c5; 
+    color: #ffffff; 
+    border: 2px solid #2782c5; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy6_1:hover {
+    color: #ffffff; 
+  }
+
+  .trend-custom-button-mindy6_2 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #861308; 
+    color: #ffffff; 
+    border: 2px solid #861308; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy6_2:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy7_1 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #0197f6; 
+    color: #ffffff; 
+    border: 2px solid #0197f6; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy7_1:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy7_2 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #e6373e; 
+    color: #ffffff; 
+    border: 2px solid #861308; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy7_2:hover {
+    color: #ffffff; 
+  }
+  .trend-custom-button-mindy7_3 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #f43c57; 
+    color: #ffffff; 
+    border: 2px solid #f43c57; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy7_3:hover {
+    color: #ffffff; 
+  }
+
+  .trend-custom-button-mindy7_4 {
+    margin: 10PX; 
+
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+     
+    border-radius: 400%; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #4be787; 
+    color: #ffffff; 
+    border: 2px solid #861308; 
+    transition: background-color 0.3s, color 0.3s; 
+  
+  }
+  
+  .trend-custom-button-mindy7_4:hover {
+    color: #ffffff; 
+  }
 
   
 /* h2css */
-.surf-productmain {
+.trend-productmain {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,19 +472,7 @@ padding: 20px;
     margin-bottom: 5px;
     font-size: 1.5em;
 }
-.shop-ecoworks{
-  background-color: rgb(10, 10, 11);
-  margin: 5px;
-  padding: 5px;
-  /* height: 15%; */
-  color: white;
-  border-radius: 5px;
-}
-.surf-Content-img h2{
-width: 10%;
-height: 30%;}
-
-.surf-center{
+.allbtn{
   display: flex;
   justify-content: center;
 }

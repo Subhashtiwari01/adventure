@@ -29,31 +29,31 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
-      <div className="menu-button" onClick={handleMenuClick}>
-        <FontAwesomeIcon icon={faBars} className="menu-icon" />
+    <div className="hed-header">
+      <div className="hed-menu-button" onClick={handleMenuClick}>
+        <FontAwesomeIcon icon={faBars} className="hed-menu-icon" />
       </div>
-      <button className="logo-button" onClick={handleAdventureClick}>
+      <button className="hed-logo-button" onClick={handleAdventureClick}>
         Adventure Works
       </button>
-      <div className="search-bar">
-        <FontAwesomeIcon icon={faSearch} className="search-icon" />
+      <div className="hed-search-bar">
+        <FontAwesomeIcon icon={faSearch} className="hed-search-icon" />
         <input type="text" placeholder="Search Adventure Works" />
       </div>
-      <div className="nav-links">
+      <div className="hed-nav-links">
         <button onClick={handleSelectStore}>
-          <FontAwesomeIcon icon={faMapMarkerAlt} className="location-icon" />
-          <span className="button-text">Store Locator</span>
+          <FontAwesomeIcon icon={faMapMarkerAlt} className="hed-location-icon" />
+          <span className="hed-button-text">Store Locator</span>
         </button>
         <button onClick={handleSignIn}>
-          <FontAwesomeIcon icon={faSignInAlt} className="signin-icon" />
-          <span className="button-text">Sign In</span>
+          <FontAwesomeIcon icon={faSignInAlt} className="hed-signin-icon" />
+          <span className="hed-button-text">Sign In</span>
         </button>
         <button onClick={handleCart}>
-          <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" />
+          <FontAwesomeIcon icon={faShoppingCart} className="hed-cart-icon" />
         </button>
         <button onClick={handleSite}>
-          <span className="button-text">Site</span>
+          <span className="hed-button-text">Site</span>
         </button>
       </div>
     </div>

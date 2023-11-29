@@ -46,6 +46,8 @@ const ImgComponent = () => {
     }
   ];
 
+  const sortedImages = images.sort((a, b) => a.id - b.id);
+
   const handleImageHover = (index) => {
     setHoveredIndex(index);
   };
@@ -55,21 +57,22 @@ const ImgComponent = () => {
   };
 
   const handleButtonClick = (imageId) => {
+    // Handle button click based on the imageId
     console.log(`Button clicked for image ${imageId}`);
   };
 
   return (
-    <div className="img-image-box">
-      {images.map((image, index) => (
+    <div className="image-box">
+      {sortedImages.map((image, index) => (
         <div
           key={image.id}
-          className={`img-image-container ${hoveredIndex === index ? 'hovered' : ''}`}
+          className={`image-container ${hoveredIndex === index ? 'hovered' : ''}`}
           onMouseEnter={() => handleImageHover(index)}
           onMouseLeave={handleImageLeave}
         >
           <img src={image.src} alt={image.title} />
           {hoveredIndex === index && (
-            <div className="img-image-details">
+            <div className="image-details">
               <h1>{image.title}</h1>
               <p>{image.description}</p>
               {image.buttons.map((button, buttonIndex) => (
